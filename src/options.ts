@@ -22,6 +22,7 @@ export default class Options {
     }
 
     transformColumnName (columnName: string) {
-        return this.options.camelCase ? camelCase(columnName) : columnName
+        return columnName;
+        //return this.options.camelCase ? camelCase(columnName) : columnName
     }
 }
